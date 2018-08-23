@@ -1,0 +1,67 @@
+extends _layout/layout
+
+//- Các giá trị mặc định cho trang web
+block variables
+	- var title = 'Home'
+	- var description = 'Description for home page'
+	- var bodyclass = 'home'
+
+//- Phần khai báo body
+block body
+	section.home_slider
+		.owl-carousel.owl-theme
+			- for(var x=1;x<4;x++)
+				.item
+					img(src="img/home_slider_1.jpg", alt="")
+					.title
+						.container
+							.row
+								.col-md-7
+									h2 FullStack Viet Nam
+									p Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus officiis velit facere?
+	section.home_new
+		.container
+			.row
+				.col-md-4.item
+					a(href="")
+						figure
+							.blockimg
+								i.fa.fa-eye
+								img(src="./img/home_news_1.jpg", alt="")
+							figcaption
+								h3 anh dep trai khoai to ahhhhiii
+								time 14/10/1999
+								p Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam iure vitae nobis nesciunt dicta laborum praesentium veniam excepturi, error pariatur ab magnam laudantium, sint dolorum sunt? Cumque, laudantium voluptate! Quasi!
+				.col-md-4.item
+					a(href="")
+						figure
+							.blockimg
+								i.fa.fa-eye
+								img(src="./img/home_news_2.jpg", alt="")
+							figcaption
+								h3 anh dep trai khoai to ahhhhiii
+								time 14/10/1999
+								p Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam iure vitae nobis nesciunt dicta laborum praesentium veniam excepturi, error pariatur ab magnam laudantium, sint dolorum sunt? Cumque, laudantium voluptate! Quasi!
+				.col-md-4.item
+					a(href="")
+						figure
+							.blockimg
+								i.fa.fa-eye
+								img(src="./img/home_news_3.jpg", alt="")
+							figcaption
+								h3 anh dep trai khoai to ahhhhiii
+								time 14/10/1999
+								p Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam iure vitae nobis nesciunt dicta laborum praesentium veniam excepturi, error pariatur ab magnam laudantium, sint dolorum sunt? Cumque, laudantium voluptate! Quasi!
+	section.home_clients
+		.container
+			.row.mt-3.mb-2
+				.col
+					.owl-carousel.owl-theme
+						- for(var i=1;i<7;i++)
+							.item
+								img(src="./img/clients_"+i+".png", alt="")
+					
+
+
+
+
